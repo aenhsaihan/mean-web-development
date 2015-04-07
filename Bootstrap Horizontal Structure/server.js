@@ -1,3 +1,7 @@
+process.env.NODE_ENV = process.env.NODE_ENV || 'development';
+
+console.log('Environment is running in ' + process.env.NODE_ENV);
+
 var express = require('./config/express');
 
 var app = express();
